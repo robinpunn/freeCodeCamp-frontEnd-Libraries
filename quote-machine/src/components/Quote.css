@@ -1,0 +1,33 @@
+.wrapper {
+    height: 100%;
+    width: 45rem;
+}
+
+#quote-box {
+    position: relative;
+    top:25%;
+    width: 35rem;
+    background-color: #777;
+    margin:auto;
+}
+
+#text {
+    padding: 1.5rem;
+    margin: 0 1.5rem;
+}
+
+#author {
+    text-align: right;
+    padding: 0 0.5rem;
+    margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+#button-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tweet-quote, #new-quote {
+    margin: 1.5rem;
+    padding: 0 0.5rem;
+}
