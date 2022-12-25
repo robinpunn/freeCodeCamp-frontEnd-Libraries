@@ -1,5 +1,6 @@
 import './App.css';
-import Quote from './components/Quote';
+import Quote from './components/Quote.js';
+
 
 function App() {
   return (
