@@ -1,5 +1,5 @@
 import React from 'react'
-import twit2 from './twit2.svg'
+import twit from './twit.svg'
 import './Quote.css'
 import axios from "axios"
 
@@ -43,8 +43,8 @@ class Quote extends React.Component {
             method: 'GET',
             url: 'https://quotes15.p.rapidapi.com/quotes/random/',
             headers: {
-                'X-RapidAPI-Key':"1ba66963ddmsh7bd36ee89016b08p179f8cjsn0bb9000a2a2c",
-                'X-RapidAPI-Host':"quotes15.p.rapidapi.com"
+                'X-RapidAPI-Key':X_RAPIDAPI_KEY,
+                'X-RapidAPI-Host':X_RAPIDAPI_HOST
             }
         };
         axios.request(options).then(response => {
@@ -70,7 +70,7 @@ class Quote extends React.Component {
                 </div>
             <div id="button-box">
                 <a id="tweet-quote" rel="noreferrer" target="_blank" href={`twitter.com/intent/tweet?text="${this.state.text}" - ${this.state.author}`}>
-                    <img src={twit2} style={{backgroundColor:`${this.state.color}`, border:`0.3rem solid ${this.state.color}`}} alt='twitter logo'/>
+                    <img src={twit} style={{backgroundColor:`${this.state.color}`, border:`0.3rem solid ${this.state.color}`}} alt='twitter logo'/>
                 </a>
                 <button id="new-quote" style={{backgroundColor:`${this.state.color}`,color:'#fff',border:`0.1rem solid ${this.state.color}`}} onClick={this.handleClick}>New Quote</button>
             </div>
